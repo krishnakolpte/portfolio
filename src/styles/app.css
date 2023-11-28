@@ -1,0 +1,51 @@
+* {
+  scroll-behavior: smooth;
+}
+.overFlow {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #6b46c1;
+  color: black;
+  transition: all 0.4s;
+  display: grid;
+  place-items: center;
+}
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: #6b46c1;
+}
+.carousel .control-dots .dot {
+  background-color: '#6b46c1';
+}
+
+.navphone {
+  transform: translateY(-100%);
+  transition: all 0.3s;
+}
+.navPhoneComes {
+  transform: translateY(0);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  transform: translateY(-80px);
+  animation: stickyHeader 0.3s ease forwards;
+  z-index: 99;
+}
+
+@keyframes stickyHeader {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
